@@ -1,0 +1,49 @@
+.square {
+    background: #fff;
+    border: 2px solid #000;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .square:hover {
+    background: #e0e0e0;
+    transform: scale(1.05);
+  }
+  
+  .symbol {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .symbol.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .filled {
+    cursor: default;
+  }
+  
+  .winning-square {
+    animation: highlight 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes highlight {
+    from {
+      background-color: #fff;
+    }
+    to {
+      background-color: #ffeb3b; /* Yellow highlight */
+    }
+  }

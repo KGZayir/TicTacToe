@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+  height: 100vh;          /* Sets the height to full viewport height */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8; /* Optional: Ensures the background color covers the entire viewport */
+}
